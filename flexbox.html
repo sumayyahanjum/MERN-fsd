@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive flex</title>
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            text-align: center;
+        }
+        .about{
+            background-color: aqua;
+            padding:4px;
+            flex:75%
+        }
+        .details{
+            background-color: rgb(202, 31, 71);
+            padding:4px;
+            flex:25%
+        }
+        @media (max-width:800px){
+            .main {
+                flex-direction:row;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h2>responsive flex box</h2>
+
+<div class="main">
+    <div class="about">about company</div>
+    <div class="details">details</div>
+</div>
+</body>
+</html>
